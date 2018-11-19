@@ -1,0 +1,50 @@
+html {
+	background-color: white;
+}
+
+body {
+	margin:0;
+}
+
+.header {
+	padding: 40px;
+	margin:0;
+	outline: 0;
+	background-color: #313D5A;
+}
+
+#heading {
+	color: white;
+	font-family: Tahoma;
+	font-size:60px;
+	padding-left:20px;
+	display: inline;
+}
+
+.trEven {
+	font-family: Tahoma;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	background-color: #73628A;
+}
+
+.trOdd {
+	font-family: Tahoma;
+	font-size: 20px;
+	text-align: center;
+	background-color: #CBC5EA;
+}
+
+#headings {
+	font-family: Tahoma;
+	font-size: 25px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+#patientTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}

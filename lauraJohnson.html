@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Patient</title>
+		<link rel="stylesheet" type="text/css" href="viewPatientStyles.css">
+		<script type="text/javascript" src="patient.js"></script>
+
+		<script type="text/javascript">
+
+		</script>
+
+
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="logo.png" width="100px" height="100px" style="display:inline">
+			<h1 id="heading">Pill Drop</h1>
+		</div>
+
+		<h1 style="font-family: Tahoma; font-size: 40px; padding-left: 20px">Laura Johnson</h1>
+
+		<div id="scriptModal">
+			<div id="modalContent">
+
+				<h1 style="font-family: Tahoma; font-size: 30px;">New Prescription Information</h1>
+				<table id="newScriptTable">
+					<tr>
+						<td class="modalData">
+							Drug:
+						</td>
+						<td class="modalData">
+							<select id="selectList">
+								<option>Colace</option>
+								<option>Amoxicillan</option>
+								<option>Xanax</option>
+								<option>Adderall</option>
+								<option>Prozac</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="modalData">
+							Strength:
+						</td>
+						<td class="modalData">
+							<input type="text" value="" id="strength">
+						</td>
+					</tr>
+					<tr>
+						<td class="modalData">
+							Frequency:
+						</td>
+						<td class="modalData">
+							<input type="text" value="" id="frequency">
+						</td>
+					</tr>
+					<tr>
+						<td class="modalData">
+							Amount:
+						</td>
+						<td class="modalData">
+							<input type="text" value="" id="amount">
+						</td>
+					</tr>
+				</table>
+				<button id="cancelButton" onclick="exit()">Cancel</button>
+				<button id="submitButton" onclick="createNewPrescription()">Submit</button>
+			</div>
+		</div>
+
+
+		<table class="t1">
+			<tr>
+				<td class="t1data"><img id="profileImg" src="laura.jpeg"></td>
+				<td class="t1data">
+					
+					<table>
+						<tr>
+							<td class="t2col">DOB:</td>
+							<td class="t2col">01/07/1993</td>
+						</tr>
+						<tr>
+							<td class="t2col">Sex:</td>
+							<td class="t2col">Female</td>
+						</tr>
+						<tr>
+							<td class="t2col">Height:</td>
+							<td class="t2col">5' 4"</td>
+						</tr>
+						<tr>
+							<td class="t2col">Weight:</td>
+							<td class="t2col">140 lbs.</td>
+						</tr>
+					</table>
+
+				</td>
+				<td class="t1data">
+					
+					<table>
+						<tr>
+							<td class="t2col">Physician:</td>
+							<td class="t2col">Dr. Alex Smith</td>
+						</tr>
+						<tr>
+							<td class="t2col">Hospital:</td>
+							<td class="t2col">St. Mary's Hospital</td>
+						</tr>
+						<tr>
+							<td class="t2col">Patient Phone:</td>
+							<td class="t2col">(980) 657 - 3214</td>
+						</tr>
+						<tr>
+							<td class="t2col">Patient Email:</td>
+							<td class="t2col">ljohnson@gmail.com</td>
+						</tr>
+					</table>
+
+				</td>
+				<td class="t1data"></td>
+			</tr>
+		</table>
+
+
+		<h1 style="font-family: Tahoma; font-size: 35px; padding-left: 20px">Prescriptions</h1>
+
+
+		<table id="prescriptionTable">
+
+			<tr class="scriptHeading">
+				<td style="border-bottom: 3px solid black">Drug</td>
+				<td style="border-bottom: 3px solid black">Strength</td>
+				<td style="border-bottom: 3px solid black">Frequency</td>
+				<td style="border-bottom: 3px solid black">Amount</td>
+			</tr>
+			<tr class="prescriptionOdd">
+				<td>Colace</td>
+				<td>100 mg</td>
+				<td>QHS</td>
+				<td>T</td>
+			</tr>
+			<tr class="prescriptionEven">
+				<td>Amoxicillan</td>
+				<td>250 mg</td>
+				<td>TID x 7 days</td>
+				<td>TT</td>
+			</tr>
+			<tr class="prescriptionOdd">
+				<td>Adderall</td>
+				<td>10 mg</td>
+				<td>TID</td>
+				<td>T</td>
+			</tr>
+
+		</table>
+
+
+		<table id="buttonTable">
+			<tr>
+				<td><button onclick="setFormVisible()" id="newPrescriptionButton" class="prescriptionBt">New Prescription</button></td>
+				<td><button onclick="exportPrescription()" id="exportPrescriptionButton" class="prescriptionBt">Export Prescription</button></td>
+				<td id="buttonSlot"><button id="disabledBt" class="prescriptionBt" disabled>Download JSON (dev)</button></td>
+			</tr>
+		</table>
+
+
+	</body>
+</html>

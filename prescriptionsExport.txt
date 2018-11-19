@@ -1,0 +1,8 @@
+amount:TID
+strength:10 mg
+frequency:OD
+drug:Adderall
+amount:TID
+strength:100 mg
+frequency:OD
+drug:Colace
